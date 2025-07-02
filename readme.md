@@ -10,8 +10,8 @@ A web-based granular particle simulation game inspired by Sandboxels, implemente
   - Fire spreading and burning oil recursively.
   - Continuous drawing with circular brush.
 - Responsive canvas with material selection, brush size, clear, and pause controls.
-- Runs inside Streamlit using embedded HTML/JS via `components.html`.
-- 
+
+ 
 ##Screenshot
 ![image](https://github.com/user-attachments/assets/b4676299-ddd2-45bd-a127-6e9276c039ff)
 
