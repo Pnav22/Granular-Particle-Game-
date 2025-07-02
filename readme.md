@@ -17,4 +17,4 @@ A web-based granular particle simulation game inspired by Sandboxels, implemente
 
 
 ## Try It Online
-[Demo](https://epe5phdpk7lviau25hb6zs.streamlit.app/)
+[demo](https://granular-particle-game.vercel.app/)
