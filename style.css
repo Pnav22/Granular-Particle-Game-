@@ -1,87 +1,101 @@
-body {
-    margin: 0;
-    padding: 0;
-    background: #1a1a1a;
-    color: white;
-    font-family: 'Courier New', monospace;
-    overflow: hidden;
+html, body {
+  margin: 0; padding: 0; height: 100%;
+  background: #1a1a1a;
+  color: white;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  user-select: none;
 }
 
-#container {
-    display: flex;
-    height: 100vh;
+#playground {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
 }
 
 canvas {
-    border: 2px solid #333;
-    cursor: crosshair;
-    background: #000;
+  border: 2px solid #333;
+  background: #000;
+  cursor: crosshair;
+  max-width: 100%;
+  max-height: 100%;
+  image-rendering: pixelated;
 }
 
 #controls {
-    width: 200px;
-    background: #2a2a2a;
-    padding: 20px;
-    border-left: 2px solid #333;
-    overflow-y: auto;
-}
-
-.material-btn {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 2px solid #444;
-    background: #333;
-    color: white;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: all 0.2s;
-}
-
-.material-btn:hover {
-    background: #444;
-    border-color: #666;
-}
-
-.material-btn.active {
-    background: #555;
-    border-color: #888;
-    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+  background: #2a2a2a;
+  padding: 10px 20px;
+  border-top: 2px solid #333;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  box-sizing: border-box;
 }
 
 .controls-section {
-    margin: 20px 0;
+  min-width: 160px;
+  flex-grow: 1;
 }
 
 .controls-section h3 {
-    margin: 0 0 10px 0;
-    color: #ccc;
-    font-size: 14px;
-    text-transform: uppercase;
+  margin: 0 0 8px 0;
+  color: #ccc;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.material-btn {
+  width: 100%;
+  padding: 8px;
+  margin: 4px 0;
+  border: 2px solid #444;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.material-btn:hover {
+  background: #444;
+  border-color: #666;
+}
+
+.material-btn.active {
+  background: #555;
+  border-color: #888;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
 }
 
 input[type="range"] {
-    width: 100%;
-    margin: 10px 0;
+  width: 100%;
+  margin: 6px 0 0 0;
 }
 
 label {
-    display: block;
-    margin: 5px 0;
-    font-size: 12px;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
 }
 
 #clearBtn {
-    background: #d44;
-    border-color: #d44;
+  background: #d44;
+  border-color: #d44;
 }
 
 #clearBtn:hover {
-    background: #e55;
+  background: #e55;
 }
 
 .info {
-    font-size: 11px;
-    color: #888;
-    margin-top: 20px;
+  font-size: 11px;
+  color: #888;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
 }
