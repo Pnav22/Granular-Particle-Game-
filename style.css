@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #1a1a1a;
+    color: white;
+    font-family: 'Courier New', monospace;
+    overflow: hidden;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+canvas {
+    border: 2px solid #333;
+    cursor: crosshair;
+    background: #000;
+}
+
+#controls {
+    width: 200px;
+    background: #2a2a2a;
+    padding: 20px;
+    border-left: 2px solid #333;
+    overflow-y: auto;
+}
+
+.material-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #444;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.material-btn:hover {
+    background: #444;
+    border-color: #666;
+}
+
+.material-btn.active {
+    background: #555;
+    border-color: #888;
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.controls-section {
+    margin: 20px 0;
+}
+
+.controls-section h3 {
+    margin: 0 0 10px 0;
+    color: #ccc;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+#clearBtn {
+    background: #d44;
+    border-color: #d44;
+}
+
+#clearBtn:hover {
+    background: #e55;
+}
+
+.info {
+    font-size: 11px;
+    color: #888;
+    margin-top: 20px;
+}
